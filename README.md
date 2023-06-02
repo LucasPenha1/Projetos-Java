@@ -20,3 +20,37 @@ Cada edição do Java tem seu foco e conjunto de recursos específicos, permitin
 Tipo referência: variáveis que possuem métodos
 
 -	Ex: String
+## Primeiro código e explicação: Calculadora de soma
+~~~java
+import java.util.Scanner;
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner primeiroNumero = new Scanner(System.in);
+        System.out.println("Digite o primeiro número: ");
+        double primeiroNumero_double = primeiroNumero.nextDouble();
+        Scanner segundoNumero = new Scanner(System.in);
+        System.out.println("Digite o segundo número: ");
+        double segundoNumero_double = primeiroNumero.nextDouble();
+        double soma = primeiroNumero_double + segundoNumero_double;
+        System.out.println("A soma é: " + soma);
+    }
+}
+~~~
+Acima podemos ver a hierarquia falada no texto acima: Começando pelo util e depois a classe Main, seguido do método main.
+
+Veja os passos para captar uma mensagem do usuário:
+Primeiro a classe Scanner é iniciada para ler a mensagem do usuário:
+~~~java
+Scanner primeiroNumero = new Scanner(System.in);
+~~~
+Depois, fazemos um print na tela para o usuário digitar o número:
+~~~java
+System.out.println("Digite o primeiro número: ");
+~~~
+Por fim, captamos o nextDouble, ou seja, o que foi digitado pelo usuário:
+~~~java
+double primeiroNumero_double = primeiroNumero.nextDouble();
+~~~
