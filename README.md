@@ -1,7 +1,4 @@
-# Projetos-Java
-Projetos feitos em Java
-
-# Teoria Java
+# Java: Teoria
 
 Java possui diferentes edições (editions) que atendem a diferentes necessidades e contextos de desenvolvimento. As principais edições do Java são:
 -	Java Standard Edition (Java SE): Essa é a edição principal do Java, voltada para o desenvolvimento de aplicativos de desktop, aplicativos de linha de comando e alguns tipos de aplicativos web. Ela fornece a base da plataforma Java, incluindo a linguagem Java, a máquina virtual Java (JVM) e a biblioteca padrão (Java Standard Library). É a edição mais amplamente utilizada do Java.
