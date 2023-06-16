@@ -9,7 +9,9 @@ public class Main {
         if (quantidade_de_algarismos >= 5){
             System.out.println("Esse número tem 5 digitos ou mais");
         }
-        else {
+        else if (quantidade_de_algarismos == 1) {
+            System.out.println("esse número tem "+ quantidade_de_algarismos +" digito");
+        } else {
             System.out.println("esse número tem "+ quantidade_de_algarismos +" digitos");
         }
     }
