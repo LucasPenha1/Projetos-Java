@@ -51,3 +51,21 @@ Por fim, captamos o nextDouble, ou seja, o que foi digitado pelo usuário:
 ~~~java
 double primeiroNumero_double = primeiroNumero.nextDouble();
 ~~~
+# Construtores
+- É uma operação especial da classe, que executa no momento da instanciação do objeto
+- Usos comuns:
+  - Iniciar valorese dos atributos
+  - permitir ou obrigar que o objeto receba dados
+  - Se um construtor customizado não for especificado, a classe disponibiliza o construtor padrão:
+    ~~~java
+    Product p = new Product();
+    ~~~
+    ![image](https://github.com/LucasPenha1/Projetos-Java/assets/124799800/96c338b9-b15f-4353-9065-06645fa211b2)
+- Geralmente se coloca depois dos atributos
+-  ![image](https://github.com/LucasPenha1/Projetos-Java/assets/124799800/a10621cc-4884-496d-b574-4ba6f69c1817)
+# Encapsulamento
+- É um princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas opeações seguras e que mantenham os objetos em um estado consistente
+- É o tal do GET e SET para acessar e alterar atributos
+- ![image](https://github.com/LucasPenha1/Projetos-Java/assets/124799800/09e256ec-2dd3-4c1a-b06d-1bc1bbe14b52)
+
+
