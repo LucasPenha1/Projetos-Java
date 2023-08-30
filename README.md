@@ -67,5 +67,8 @@ double primeiroNumero_double = primeiroNumero.nextDouble();
 - É um princípio que consiste em esconder detalhes de implementação de uma classe, expondo apenas opeações seguras e que mantenham os objetos em um estado consistente
 - É o tal do GET e SET para acessar e alterar atributos
 - ![image](https://github.com/LucasPenha1/Projetos-Java/assets/124799800/09e256ec-2dd3-4c1a-b06d-1bc1bbe14b52)
+# Tipo referência x Tipo valor
+![image](https://github.com/LucasPenha1/Projetos-Java/assets/124799800/d94d34c3-8587-4a3c-b4a8-5e33c3236997)
+
 
 
