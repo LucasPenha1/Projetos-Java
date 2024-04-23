@@ -1,0 +1,32 @@
+name: Add Issue to Project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  create-update-project:
+    name: Create/update project issue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/add-to-project@v0.3.0 # This adds the issue to the project
+        with:
+          project-url: https://github.com/orgs/AMM-Tecnologia/projects/5
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+        id: add-project
+      - uses: titoportas/update-project-fields@v0.1.0
+        with:
+          project-url: https://github.com/orgs/AMM-Tecnologia/projects/5
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          item-id: ${{ steps.add-project.outputs.itemId }} # Use the item-id output of the previous step
+          field-keys: Status,Prazo,Tipo,Complexidade,Nível Interesse,Horas Estimadas,Horas Restantes,Horas Gastas
+          field-values: A Fazer,${{ github.event.issue.created_at }},Desenvolvimento,Simples,Importante,999,999,0
+      - uses: pozil/auto-assign-issue@v1
+        # https://github.com/marketplace/actions/auto-assign-issue
+        with:
+          assignees: ${{ github.actor }}
+          numOfAssignee: 1
+          allowSelfAssign: true
+          abortIfPreviousAssignees: false
